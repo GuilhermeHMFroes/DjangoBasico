@@ -1,0 +1,89 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <h1 class="display-4">FRAMEWORKS BACKEND</h1>
+
+    <p>
+        Os frameworks web backend são conjuntos de ferramentas, bibliotecas e padrões de desenvolvimento que simplificam a criação de aplicativos e serviços
+        do lado do servidor. Eles fornecem uma estrutura robusta e organizada para o desenvolvimento de funcionalidades backend, como gerenciamento de banco
+        de dados, roteamento de solicitações, autenticação de usuários, entre outras tarefas comuns.
+    </p>
+
+    <p>
+        Aqui estão alguns dos frameworks web backend mais populares e suas características distintas:
+    </p>
+
+    <hr class="my-4">
+
+    <h2>EXPRESS.JS</h2>
+
+    <p>
+        Express.js é um framework minimalista e flexível para aplicativos web em Node.js. Ele fornece uma camada simples e intuitiva para a construção de
+        servidores web e APIs. O Express.js é conhecido por sua abordagem leve e modular, permitindo que os desenvolvedores escolham e adicionem bibliotecas
+        e funcionalidades conforme necessário. É altamente personalizável e amplamente utilizado na construção de aplicativos web escaláveis.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>RUBY ON RAILS</h2>
+
+    <p>
+        Ruby on Rails, também conhecido como Rails, é um framework escrito em Ruby. Ele segue o princípio da Convenção sobre Configuração, o que significa que
+        muitas tarefas são automatizadas e configuradas por padrão, tornando o desenvolvimento mais rápido e produtivo. O Rails possui uma arquitetura MVC
+        (Model-View-Controller) bem definida e inclui recursos poderosos, como mapeamento objeto-relacional, gerenciamento de rotas e segurança embutida.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>DJANGO</h2>
+
+    <p>
+        Django é um framework web backend escrito em Python. Ele é projetado para ser rápido, seguro e escalável. O Django inclui muitos componentes prontos
+        para uso, como autenticação de usuários, administração do sistema e ORM (Object-Relational Mapping) para interagir com bancos de dados. Ele segue o
+        padrão MVC e adota a filosofia "batteries included", o que significa que muitas funcionalidades comuns já estão incorporadas no framework.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>LARAVEL</h2>
+
+    <p>
+        Laravel é um framework web backend escrito em PHP. Ele oferece uma sintaxe elegante e expressiva, além de uma ampla variedade de recursos. O Laravel
+        simplifica tarefas comuns, como roteamento, gerenciamento de banco de dados e autenticação de usuários. Ele também inclui um ORM robusto (Eloquent) e
+        uma camada de abstração de cache para melhorar o desempenho. O Laravel é conhecido por sua documentação detalhada e por sua comunidade ativa.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>SPRING</h2>
+
+    <p>
+        Spring é um framework de aplicativos empresariais em Java. Ele fornece um ambiente abrangente para o desenvolvimento backend, oferecendo recursos como
+        injeção de dependência, segurança, gerenciamento de transações e muito mais. O Spring segue o princípio da inversão de controle e facilita a criação
+        de aplicativos modulares e escaláveis. É amplamente utilizado em grandes projetos empresariais.
+    </p>
+
+    <hr class="my-4">
+
+    <p>
+        Cada um desses frameworks web backend possui suas próprias características, pontos fortes e comunidades de suporte. A escolha do framework dependerá das
+        necessidades do projeto, da experiência do desenvolvedor e das características específicas de cada linguagem e ecossistema. É importante considerar
+        fatores como facilidade de uso, escalabilidade, desempenho e documentação ao escolher o framework mais adequado para o desenvolvimento de aplicativos
+        backend.
+    </p>
+
+    <script>
+        // Executa o código quando o DOM estiver completamente carregado
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var DW = document.getElementById("navbarDropdown");
+            DW.classList.add("active");
+
+            var EList = document.getElementById("Backend");
+            EList.classList.add("active");
+
+        });
+    </script>
+
+{% endblock %}

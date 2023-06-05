@@ -1,0 +1,86 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <h1 class="display-4">FRAMEWORKS FRONTEND</h1>
+
+    <p>
+        Frameworks web frontend são conjuntos de ferramentas, bibliotecas e padrões de desenvolvimento que facilitam a criação de interfaces de usuário
+        interativas e responsivas para aplicações web. Esses frameworks fornecem uma estrutura organizada e pré-definida, permitindo que os desenvolvedores
+        construam interfaces de forma mais eficiente e rápida. Vamos detalhar alguns dos frameworks mais populares:
+    </p>
+
+    <hr class="my-4">
+
+    <h2>ANGULAR</h2>
+
+    <p>
+        Desenvolvido pelo Google, o Angular é um framework web frontend baseado em TypeScript. Ele oferece um conjunto abrangente de recursos, como manipulação
+        de dados em tempo real, gerenciamento de estado, roteamento e validação de formulários. O Angular segue o padrão de arquitetura MVC
+        (Model-View-Controller) e promove a modularidade do código, facilitando a manutenção e a escalabilidade das aplicações.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>REACT</h2>
+
+    <p>
+        Criado pelo Facebook, o React é uma biblioteca JavaScript focada na construção de interfaces de usuário reativas e componentizadas. Ele utiliza um
+        conceito chamado Virtual DOM, que permite atualizações eficientes e rápidas da interface. O React incentiva a reutilização de componentes, o que
+        torna o desenvolvimento mais modular e a manutenção mais fácil. O React é amplamente adotado e possui uma vasta comunidade, oferecendo muitas
+        bibliotecas e soluções complementares.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>VUE.JS</h2>
+
+    <p>
+        O Vue.js é um framework frontend progressivo, que permite aos desenvolvedores adotar gradualmente suas funcionalidades em projetos existentes.
+        Ele possui uma sintaxe simples e intuitiva, facilitando a criação de componentes reutilizáveis e a manipulação do estado da aplicação.
+        O Vue.js oferece recursos avançados, como roteamento, gerenciamento de estado e renderização do lado do servidor. Sua curva de aprendizado é suave,
+        o que o torna uma escolha popular para desenvolvedores iniciantes.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>EMBER.JS</h2>
+
+    <p>
+        O Ember.js é um framework frontend de alto desempenho e rico em recursos. Ele segue uma abordagem de convenção sobre configuração, fornecendo uma
+        estrutura sólida e bem definida para o desenvolvimento de aplicações web. O Ember.js é conhecido por sua curva de aprendizado íngreme, mas oferece
+        uma arquitetura poderosa, gerenciamento de rotas avançado, ligação de dados bidirecional e ferramentas de desenvolvimento robustas.
+    </p>
+
+    <hr class="my-4">
+
+    <h2>SVELTE</h2>
+
+    <p>
+        O Svelte é um framework frontend de compilação, o que significa que o código escrito em Svelte é compilado para um código JavaScript otimizado.
+        Ele se destaca por sua abordagem de "compilar no tempo de compilação", que resulta em aplicações extremamente eficientes e com melhor desempenho.
+        O Svelte oferece uma sintaxe simples e fácil de entender, além de recursos como ligação reativa, transições e animações.
+    </p>
+
+    <hr class="my-4">
+
+    <p>
+        É importante ressaltar que a escolha do framework web frontend depende das necessidades do projeto, da experiência do desenvolvedor e das características
+        específicas de cada framework. Cada um deles possui suas próprias vantagens, desvantagens e comunidade de suporte. Portanto, é recomendável avaliar as
+        necessidades do projeto e estudar os recursos e a documentação de cada framework antes de tomar uma decisão.
+    </p>
+
+    <script>
+        // Executa o código quando o DOM estiver completamente carregado
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var DW = document.getElementById("navbarDropdown");
+            DW.classList.add("active");
+
+            var EList = document.getElementById("Frontend");
+            EList.classList.add("active");
+
+        });
+    </script>
+
+{% endblock %}

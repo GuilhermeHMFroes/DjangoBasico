@@ -1,0 +1,61 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <h1 class="display-4">JAVA SCRIPT</h1>
+
+    <p>
+        JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Ela permite adicionar interatividade, dinamismo e
+        funcionalidades avançadas às páginas da Web. Com o JavaScript, é possível manipular o conteúdo, responder a eventos e criar aplicações interativas
+        do lado do cliente.
+    </p>
+
+    <p>
+        Uma das principais características do JavaScript é a sua capacidade de interagir com o HTML e o CSS. Ele pode ser incorporado diretamente no código
+        HTML ou pode ser mantido em arquivos separados e referenciados nas páginas. Com o JavaScript, é possível selecionar elementos HTML, modificar seu
+        conteúdo, estilos e atributos, criar elementos dinamicamente e alterar o layout da página.
+    </p>
+
+    <p>
+        Além disso, o JavaScript permite lidar com eventos, como cliques de mouse, pressionamento de teclas, envio de formulários e muito mais. Esses eventos
+        podem ser capturados e tratados por meio de funções JavaScript, possibilitando a execução de ações específicas em resposta a esses eventos.
+    </p>
+
+    <p>
+        O JavaScript também oferece suporte a estruturas de controle, como loops e condicionais, permitindo a criação de lógica e tomada de decisões no código.
+        Isso permite a criação de aplicações interativas mais complexas, onde o comportamento da página pode ser adaptado com base em certas condições.
+    </p>
+
+    <p>
+        Outra característica poderosa do JavaScript é sua capacidade de fazer requisições assíncronas para servidores web. Isso possibilita a obtenção e o
+        envio de dados de forma assíncrona, sem interromper a execução do restante do código. Essa funcionalidade é amplamente utilizada para buscar e atualizar
+        informações em tempo real, como dados de API ou interações com bancos de dados.
+    </p>
+
+    <p>
+        Além do desenvolvimento web, o JavaScript também é utilizado em outros contextos, como o desenvolvimento de aplicações móveis híbridas ou nativas,
+        criação de jogos, automação de tarefas e muito mais. Ele possui uma ampla gama de bibliotecas e frameworks, como o React, Vue.js e Angular, que
+        facilitam o desenvolvimento de aplicações web mais complexas.
+    </p>
+
+    <p>
+        Em resumo, o JavaScript desempenha um papel fundamental no desenvolvimento web moderno. Com sua capacidade de manipular elementos HTML, responder a
+        eventos, criar lógica e interagir com servidores, ele permite a criação de páginas e aplicações web interativas e dinâmicas. Com sua ampla adoção e
+        suporte, o JavaScript continua a evoluir, proporcionando aos desenvolvedores as ferramentas necessárias para criar experiências web poderosas
+        e envolventes.
+    </p>
+
+    <script>
+        // Executa o código quando o DOM estiver completamente carregado
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var DW = document.getElementById("navbarDropdown");
+            DW.classList.add("active");
+
+            var EList = document.getElementById("JavaScript");
+            EList.classList.add("active");
+
+        });
+    </script>
+
+{% endblock %}

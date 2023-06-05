@@ -1,0 +1,67 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <h1 class="display-4">HTML</h1>
+
+    <p>
+       HTML (Hypertext Markup Language) é uma linguagem de marcação fundamental para a criação e estruturação de páginas da Web.
+        Ela fornece uma estrutura semântica que permite aos desenvolvedores descrever o conteúdo e a organização de um documento web de forma clara e consistente.
+    </p>
+
+    <p>
+        O HTML é baseado em um sistema de marcação composto por elementos e tags. Cada elemento é representado por uma tag que define a função e o propósito do
+        conteúdo dentro do documento. Por exemplo, a tag &lt;h1&gt; é utilizada para indicar um cabeçalho de nível 1, enquanto a tag &lt;p&gt; é utilizada para
+        indicar um parágrafo.
+    </p>
+
+    <p>
+        Além das tags básicas de estruturação, como cabeçalhos, parágrafos e listas, o HTML também oferece uma ampla variedade de elementos para diferentes
+        finalidades. Existem tags específicas para criar links (&lt;a>), imagens (&lt;img>), tabelas (&lt;table>), formulários (&lt;form>), entre muitos outros.
+    </p>
+
+    <p>
+        Uma das principais vantagens do HTML é sua capacidade de ser interpretado pelos navegadores web. Os navegadores entendem a estrutura e as tags do
+        HTML e são capazes de exibir o conteúdo de forma adequada aos usuários. Isso permite que os desenvolvedores criem páginas web com conteúdo acessível e
+        interativo.
+    </p>
+
+    <p>
+        A evolução do HTML tem sido constante ao longo dos anos. A especificação mais recente é o HTML5, que introduziu uma série de recursos avançados e
+        elementos semânticos. O HTML5 trouxe melhorias significativas para a mídia incorporada, como vídeos e áudios, além de adicionar elementos como
+        &lt;header>, &lt;footer>, &lt;nav>, entre outros, que ajudam a fornecer uma estrutura semântica mais clara para os documentos web.
+    </p>
+
+    <p>
+        O HTML também permite a utilização de CSS (Cascading Style Sheets) para estilizar e posicionar elementos na página. O CSS permite definir cores, fontes,
+        tamanhos, margens, entre outros atributos visuais, separando assim a estrutura do conteúdo da sua apresentação visual.
+    </p>
+
+    <p>
+        Outro aspecto importante do HTML é a acessibilidade. Por meio de práticas de marcação adequadas e o uso de elementos semânticos, os desenvolvedores
+        podem criar páginas web acessíveis, que podem ser compreendidas por pessoas com deficiência visual, por exemplo, por meio de leitores de tela.
+    </p>
+
+    <p>
+        Além disso, o HTML oferece suporte à internacionalização, permitindo a criação de conteúdo em diferentes idiomas e o uso de caracteres especiais e
+        símbolos específicos de cada região.
+    </p>
+
+    <p>
+        Em suma, o HTML é a base da Web e desempenha um papel fundamental na criação de páginas e documentos web. Ele fornece uma estrutura semântica para
+        descrever o conteúdo, permitindo que os desenvolvedores criem sites acessíveis, interativos e visualmente atraentes. Com sua evolução contínua e a adoção de boas práticas, o HTML continua a ser a principal linguagem de marcação utilizada para a construção da Web.
+    </p>
+
+    <script>
+        // Executa o código quando o DOM estiver completamente carregado
+        document.addEventListener("DOMContentLoaded", function() {
+            var DW = document.getElementById("navbarDropdown");
+            DW.classList.add("active");
+
+            var EList = document.getElementById("HTML");
+            EList.classList.add("active");
+
+        });
+    </script>
+
+{% endblock %}

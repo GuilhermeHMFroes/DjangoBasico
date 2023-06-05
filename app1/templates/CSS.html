@@ -1,0 +1,68 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <h1 class="display-4">CSS</h1>
+
+    <p>
+        CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar a apresentação e o layout de páginas da Web. Com o CSS,
+        é possível definir a aparência visual dos elementos HTML, como cores, fontes, margens, tamanhos e posicionamento.
+    </p>
+
+    <p>
+        A separação entre o HTML e o CSS é uma prática recomendada, pois permite uma maior organização e manutenção do código. Enquanto o HTML
+        é responsável pela estrutura e pelo conteúdo da página, o CSS é responsável por definir como esse conteúdo deve ser apresentado aos usuários.
+    </p>
+
+    <p>
+        Uma das principais vantagens do CSS é sua capacidade de aplicar estilos de forma cascata. Isso significa que é possível definir estilos gerais para
+        um determinado tipo de elemento e, em seguida, especificar estilos mais específicos para elementos individuais. Isso permite uma maior flexibilidade
+        no design e na personalização das páginas.
+    </p>
+
+    <p>
+        Existem várias maneiras de aplicar o CSS a uma página HTML. A mais comum é usando a tag &lt;style>, que é colocada no cabeçalho do documento HTML.
+        Dentro dessa tag, é possível definir regras de estilo que serão aplicadas a elementos específicos.
+    </p>
+
+    <p>
+        Além disso, o CSS também pode ser aplicado externamente, por meio de arquivos CSS separados. Isso permite que o estilo seja compartilhado entre várias
+        páginas, facilitando a manutenção e a consistência visual em todo o site.
+    </p>
+
+    <p>
+        O CSS oferece uma ampla gama de recursos e seletores para aplicar estilos de forma precisa. É possível selecionar elementos com base em suas classes,
+        IDs, hierarquia ou outros atributos. Além disso, é possível utilizar pseudo-classes e pseudo-elementos para aplicar estilos a estados específicos
+        dos elementos, como :hover para quando o mouse passa por cima de um elemento.
+    </p>
+
+    <p>
+        Com o CSS, também é possível criar layouts responsivos, que se adaptam a diferentes tamanhos de tela. Isso é feito por meio de técnicas como media
+        queries, que permitem aplicar estilos diferentes com base na largura do dispositivo.
+    </p>
+
+    <p>
+        Outra vantagem do CSS é sua capacidade de animação e transição. É possível adicionar efeitos visuais, como transições suaves entre estados de
+        elementos, animações de movimento, rotação e muito mais. Isso proporciona uma experiência interativa e dinâmica aos usuários.
+    </p>
+
+    <p>
+        Em resumo, o CSS desempenha um papel fundamental no design e na aparência das páginas da Web. Ele permite a personalização, a estilização e o layout
+        dos elementos HTML, garantindo uma apresentação visual atraente e consistente. Com sua flexibilidade e recursos avançados, o CSS capacita
+        os desenvolvedores a criar experiências web visualmente agradáveis e responsivas.
+    </p>
+
+    <script>
+        // Executa o código quando o DOM estiver completamente carregado
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var DW = document.getElementById("navbarDropdown");
+            DW.classList.add("active");
+
+            var EList = document.getElementById("CSS");
+            EList.classList.add("active");
+
+        });
+    </script>
+
+{% endblock %}
