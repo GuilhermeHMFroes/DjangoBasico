@@ -20,10 +20,11 @@ from app1 import views
 
 urlpatterns = [
 
-    path('admin/', admin.site.urls),
+    path('paineldecontrole/', admin.site.urls),
     path('', views.index, name='index'),
     path('index/', views.index, name='index'),
     path('w3c/', views.w3c, name='w3c'),
+    path('formulario/', views.formulario, name='formulario'),
     path('HTML', views.HTML, name='HTML'),
     path('CSS', views.CSS, name='CSS'),
     path('JavaScript', views.JavaScript, name='JavaScript'),

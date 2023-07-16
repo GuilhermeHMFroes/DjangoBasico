@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from app1.models import Produto
 
 # Create your views here.
 
@@ -22,3 +23,6 @@ def Frontend(request):
 
 def Backend(request):
     return render(request, 'Backend.html')
+
+def formulario(request):
+    return render(request, 'formulario.html')

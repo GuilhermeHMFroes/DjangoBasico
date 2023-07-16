@@ -52,6 +52,10 @@
 
                         </li>
 
+                        <li class="nav-item {% if request.path == '/formulario/' %}active{% endif %}">
+                            <a class="nav-link" href="{% url 'formulario' %}">Formulario</a>
+                        </li>
+
                     </ul>
 
                     <button id="btnDownload" type="button" class="btn btn-outline-dark">Baixar</button>
