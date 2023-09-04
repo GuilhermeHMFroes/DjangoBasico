@@ -4,4 +4,28 @@
 
     <h1>Formulários</h1>
 
+    <form method="POST" action="{% url 'formulario' %}" class="form">
+
+        {% csrf_token %}
+
+        <div>
+
+            <label>Nome completo: </label>
+            <input class="" type="text" placeholder="Insira o seu nome completo aqui" id="nome" name="nome">
+            <br>
+
+            <label>Email: </label>
+            <input class="" type="text" placeholder="Insira o seu email aqui" id="email" name="email">
+            <br>
+
+            <label>Mensagem: </label>
+            <input class="" type="text" placeholder="Digite a sua mensagem aqui aqui" id="mensagem" name="mensagem">
+            <br>
+
+        </div>
+
+        <button class="btn btn-outline-primary btn-sm" type="submit" id="Enviar">Enviar</button>
+
+    </form>
+
 {% endblock %}

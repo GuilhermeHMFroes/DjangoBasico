@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from app1.models import Produto
+from django.http import HttpResponse
+from .forms import Formulario
 
 # Create your views here.
 
@@ -24,5 +25,29 @@ def Frontend(request):
 def Backend(request):
     return render(request, 'Backend.html')
 
+
 def formulario(request):
-    return render(request, 'formulario.html')
+
+    if request.method == 'POST':
+        form = Formulario(request.POST)
+
+        if form.is_valid():
+            nome = form.cleaned_data['nome']
+            email = form.cleaned_data['email']
+            mensagem = form.cleaned_data['mensagem']
+
+            print(f'Nome: {nome}')
+            print(f'E-mail: {email}')
+            print(f'Mensagem: {mensagem}')
+        else:
+            print("Formulário inválido. Erros de validação:")
+            print(form.errors)
+
+    else:
+        form = Formulario()
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'formulario.html', context)
