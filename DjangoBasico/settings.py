@@ -30,7 +30,7 @@ DEBUG = True
 if DEBUG:
     ALLOWED_HOSTS = []
 else:
-    ALLOWED_HOSTS = [".vercel.app"]
+    ALLOWED_HOSTS = ['*']
 
 # Application definition
 
