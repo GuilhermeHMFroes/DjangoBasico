@@ -1,0 +1,18 @@
+"config": {"maxLambdaSize": "15mb", "runtime": "python3.11"}
+    }],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "config/wsgi.py"
+        },
+        {
+            "source": "/ads.txt",
+            "destination": "https://video-downloader-topaz.vercel.app/static/ads.txt"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/config/wsgi.py"
+        }
+    ]
+}
+}
