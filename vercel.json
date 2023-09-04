@@ -1,18 +1,13 @@
-"config": {"maxLambdaSize": "15mb", "runtime": "python3.11"}
+{
+    "builds": [{
+        "src": "DjangoBasico/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
     }],
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "config/wsgi.py"
-        },
-        {
-            "source": "/ads.txt",
-            "destination": "https://video-downloader-topaz.vercel.app/static/ads.txt"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/config/wsgi.py"
+            "src": "/(.*)",
+            "dest": "DjangoBasico/wsgi.py"
         }
     ]
-}
 }
